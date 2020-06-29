@@ -7,7 +7,7 @@
 
 <img src="Public/assets/TT Images/Meal Planner.png"
      alt="Log-in Page"
-     style="float: left; margin-right: 10px;" />
+     style="margin-right: 10px; height: 300px;" />
 
 
 ## Description
@@ -16,12 +16,16 @@ The mental load is an issue that is gaining attention all over the world. It's t
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
-* [Pitch] (#pitch)
+* [Pitch](#pitch)
 * [Contributing](#contributing)
 * [Links](#Links)
-### Installation
+* [Tenchnologies](#Technologies)
+* [Icebox](#Icebox)
+* [Developers](#Developers)
+
+## Installation
 npm i
-### Usage
+## Usage
 You run this application in terminal or bash with server.js locally with 8080 in conjunction with MySql.
 
 * DROP DATABASE IF EXISTS mealplanner_db;
@@ -32,62 +36,117 @@ You run this application in terminal or bash with server.js locally with 8080 in
 
  NOTE: Photos are uploaded with AWS, you will not have access locally, as AWS keys are saved in .env file for security purposes.
 
-### License
+## License
 MIT
 
-### Contributing
+## Contributing
 No contributors allowed.
 
-### Pitch
+## Pitch
 
-<img src = "Public/assets/TT Images/PancakesHomepage.PNG" href = "https://youtu.be/AOKByMfb4K0/"> 
+Click to Watch!
 
+<a href = "https://youtu.be/AOKByMfb4K0/" target= "_blank">
+<img alt="Image of Homepage" style ="height: 300px;" src = "Public/assets/TT Images/PancakesHomepage.PNG"> 
+</a>
 
-[![made-with-VSCode](https://img.shields.io/badge/Made%20with-VSCode-1f425f.svg)](https://code.visualstudio.com/)
-[![SC2 Video](https://img.youtube.com/vi/--b-9HrKK6w/0.jpg)](http://www.youtube.com/watch?v=--b-9HrKK6w)
-
-### Links
+## Links
 * GitHub repository URL: https://github.com/annaxgrace/MealPlanner
 * Heroku deployed URL: https://cooking-together.herokuapp.com/
 
-### Developers
+## Technologies
 
-#### Anna Conover
+### API
+* Recipe Puppy: http://www.recipepuppy.com/
+     - Searches the web based on type of meal you want and returns URLs
+* MyCookBook: https://rapidapi.com/mycookbook/api/mycookbook-io1
+     - Takes the necessary recipe information from the URL page and returns it in object form
+
+### Languages 
+* HTML, CSS, JavaScript, Node.js
+
+### FrameWorks
+* Bootstrap, Express
+
+### Dependencies
+* passport
+     - Authentication so we can log in/store users safely
+* express-fileupload
+     - Allows our data to be updated to formData, so it can be uploaded
+* aws-sdk
+     - Gives us access to our s3 images bucket
+* bcryptjs
+     - Encrypts our passwords for security
+* bs-custom-file-input
+     - Allows bootstrap to grab files from client
+* express-session
+     - Allows us to use cookies
+* mysql2
+     - allows us to connect to a MySql database
+* sequelize
+     - ORM for sequelize for efficiency
+* nodemailer
+     - Sends our email for us
+
+
+## Icebox
+
+* Ability to save recipes as favorites
+* Ability for a user to have multiple teams
+* Add a default image in case a user does not want to add an image
+* Upload images in tablets and phones from images apps
+* Ability to update your dietary restrictions and photo from Table page
+* User chooses what time each "meal time" is - right now breakfast ends at 9:00 and lunch ends at 15:00
+
+
+## Developers
+
+### Anna Conover
+
+<img src="Public/assets/TT Images/annachef.png"
+     alt="Picture of Developer Anna"
+     style="margin-right: 10px; height: 200px;" />
+
 * Github username: annaxgrace
 * Email: anna.grace.conover@gmail.com
 * GitHub Profile URL: https://github.com/AnnaxGrace
 
-<img src="Public/assets/TT Images/annachef.png"
-     alt="Log-in Page"
-     style="float: left; margin-right: 10px;" />
 
 
-#### Tingting Chen
+### Tingting Chen
+
+<img src="Public/assets/TT Images/ttchef.png"
+     alt="Picture of Developer TingTing"
+     style="margin-right: 10px; height: 200px;" />
+
 * Github username: tingtingctt
 * Email: tingtingctt@gmail.com
 * GitHub Profile URL: https://github.com/tingtingctt
 
-<img src="Public/assets/TT Images/ttchef.png"
-     alt="Log-in Page"
-     style="float: left; margin-right: 10px;" />
 
 
-#### Joe Mastropieri
+### Joe Mastropieri
+
+<img src="Public/assets/TT Images/joechef.png"
+     alt="Picture of Developer Joe"
+     style="margin-right: 10px; height: 200px;" />
+
 * Github username: jcmastropieri
 * Email: 
 * GitHub Profile URL: https://github.com/jcmastropieri
 
-<img src="Public/assets/TT Images/joechef.png"
-     alt="Log-in Page"
-     style="float: left; margin-right: 10px;" />
 
 
-#### Oleksandr Prykotenko
+
+### Oleksandr Prykotenko
+
+<img src="Public/assets/TT Images/alexchef.png"
+     alt="Picture of Developer Oleksandr"
+     style=" margin-right: 10px; height: 200px;" />
+
 * Github username: prikat
 * Email: 
 * GitHub Profile URL: https://github.com/prikat
 
-<img src="Public/assets/TT Images/alexchef.png"
-     alt="Log-in Page"
-     style="float: left; margin-right: 10px;" />
+
 
