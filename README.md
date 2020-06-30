@@ -98,6 +98,7 @@ Click to Watch!
 * Ability to update your dietary restrictions and photo from Table page
 * User chooses what time each "meal time" is - right now breakfast ends at 9:00 and lunch ends at 15:00
 * Garden also keeps track of when to water your plants
+* The user has the ability to remove themself from a team
 
 
 ## Developers

@@ -38,7 +38,7 @@ module.exports = function(app) {
         })
     });
 
-    //Returns the chef with the give name and id
+    //Returns the chef with the give name and TeamId
     app.get("/api/chef/image/:id/:name", function(req, res) {
         db.User.findAll({
             include: [{

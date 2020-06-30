@@ -81,13 +81,11 @@ $(document).ready(() => {
     //Hands our rending to the page using selected meal
     const renderMeal = data => {
 
-        console.log("***THis is data")
-        console.log(data)
+      
         //calls our api to get our image path to grab from our amazon S3
 
         $.get("/api/chef/image/" + id + "/" + data[0].mealChef).then( response => {
-            console.log("this is response")
-            console.log(response);
+           
             //this matches our picture image name to how it's saved in S3
             let noOutsideSpace = (response[0].Chef.chefImage).trim()
             let spacePlus = noOutsideSpace.split(" ").join("+");
