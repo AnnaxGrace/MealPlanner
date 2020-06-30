@@ -112,16 +112,15 @@ $(document).ready( () => {
 
     //This puts our list of instructions in an ordered list
     const listInstructions = takenList => {
-
         let instructP = $("<p>");
         let newOL = $("<ol>");
-
+        
         for (i = 0; i < takenList.length; i++) {
             let newListItem = $("<li>").text(takenList[i]);
             newOL.append(newListItem);
         }
         instructP.append(newOL);
-        $("instructions-list").html(instructP)
+        $(".instructions-list").html(instructP)
     };
 
     //When a specific view button is clicked on, render that meal's information

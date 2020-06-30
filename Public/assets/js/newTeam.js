@@ -14,7 +14,7 @@ $(document).ready(() =>  {
     $.get("/api/user_data", function(data) {
 
         thisId = data.id
-        console.log(thisId)
+        
         
     });
 
@@ -31,7 +31,7 @@ $(document).ready(() =>  {
             arrayKey.push(randomKey)
         }
         const finalKey = arrayKey.join("");
-        console.log(finalKey)
+        
     
 
         const newTeam = {
@@ -39,7 +39,7 @@ $(document).ready(() =>  {
             key: finalKey
         }
 
-        console.log(newTeam)
+        
         makeNewTeam();
 
         async function makeNewTeam () {

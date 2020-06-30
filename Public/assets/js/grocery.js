@@ -14,7 +14,7 @@ $(document).ready(function() {
 
                 //calls all of the grocery items in our grocery model
                 $.get("/api/grocery/" + id).then( data => {
-                    console.log(data);
+                
                     $("#listContainer").html("");
                     for (i = 0; i < data.length; i++) {
                         //Creates the grocery list item, with its checkmark and delete button

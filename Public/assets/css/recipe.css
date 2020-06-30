@@ -72,6 +72,7 @@ h4:hover{
 .btn:focus,.btn:active {
     outline: none !important;
     box-shadow: none;
+    background-color: hsla(0, 50%, 49%, 1)
  }
 
 a {
