@@ -182,6 +182,7 @@ $(document).ready(function() {
     $("body").attr("style","background-image: url('assets/TT Images/bamboo.png')");
   });
 
+  
 
   // ----------- Virtual Garden -------------
 
@@ -258,53 +259,6 @@ $(document).ready(function() {
     });
   };
   
-  // $('#gardendiv').animateRotate(90);
-
-
-//   function loop() {
-//       rat.css({height:"10px", left:0});
-//       rat.animate ({
-//           height: "300px",
-//           left: '-=500px',
-//       }, 5000, function() {
-//           loop();
-//       });
-//   }
-//   loop();
-
-
-  // $(document).keyup(function(e) {
-  //   switch (e.which) {
-
-  //   // Move Buttons (Keyboard Down)
-  //   case 40:
-  //     rat.animate({ top: "+=100px" }, "normal");
-  //     break;
-
-  //     // Move Buttons (Keyboard Right)
-  //   case 39:
-  //     rat.animate({ left: "+=100px" }, "normal");
-  //     break;
-
-  //     // Move Buttons (Keyboard Up)
-  //   case 38:
-  //     rat.animate({ top: "-=100px" }, "normal");
-  //     break;
-
-  //     // Move Buttons (Keyboard Left)
-  //   case 37:
-  //     rat.animate({ left: "-=100px" }, "normal");
-  //     break;
-
-  //     // "r" key for "run"
-  //   case 82:
-  //     rat.attr("style", "animation: run 10s 1");
-
-  //   default:
-  //     break;
-  //   }
-  // });
- 
 
 
 }); 
