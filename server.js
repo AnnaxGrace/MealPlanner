@@ -32,6 +32,7 @@ require("./Routes/team-api-routes.js")(app);
 require("./Routes/email-api-routes.js")(app);
 require("./Routes/meal-api-routes.js")(app);
 require("./Routes/grocery-api-routes")(app);
+require("./Routes/garden-api-routes")(app);
 
 // Syncing our database and logging a message to the user upon success
 db.sequelize.sync().then(() => {
