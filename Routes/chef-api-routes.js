@@ -40,10 +40,14 @@ module.exports = function(app) {
 
     //Returns the chef with the give name and id
     app.get("/api/chef/image/:id/:name", function(req, res) {
-        db.Chef.findAll({
+        db.User.findAll({
+            include: [{
+                model: db.Chef,
+                where: {chefName: req.params.name}
+            }],
+            // include: [ db.Chef, { where: {chefName: req.params.name}}],
             where: {
-                UserId: req.params.id,
-                chefName: req.params.name
+                TeamId: req.params.id,
             }
         }).then( nameResults => {
             res.json(nameResults)
