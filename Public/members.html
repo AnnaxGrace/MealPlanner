@@ -12,7 +12,17 @@
       <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
       
-      
+       <!-- Script section -->
+       <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+ 
+     
+       <script src = "assets/js/moment.min.js"></script>
+       <script src="assets/js/TTscript.js"></script>
+       <script src="assets/js/index.js"></script>
+       <script src="assets/js/nextMeal.js"></script>
+       <script src="assets/js/garden.js"></script>
 
       <title>CookingTogether Homepage</title>
       <link rel="shortcut icon" type="image/png" href="assets/TT Images/food.jpeg">
@@ -237,16 +247,72 @@
         <div id="gardenbtndiv">
           <img id="gardenbtn" class="d-block w-100" src="assets/TT Images/gardenicon.gif">
         </div>
-        <div id="whiteout" class="beige">
+        <div id="whiteout" class="beige" ondragover="drag_over(event)" ondrop="drop(event)">
+          <div id="maturity-div">
+            <h3 id="days-mature">Days to mature:</h3>
+            <br>
+            <div id="plantsDiv"></div>
+            <br>
+            <button id="addPlantBtn" type = "button" class = "btn btn-success urlBtn" data-toggle="modal" data-target ="plantsModal">Add a Plant</button>
+            <br>
+          </div>
+
           <div id="gardendiv" class="beige">
-              <img id="gardenImg" class="d-block w-100" src="assets/TT Images/garden.jpg">
-              <img id="mushroom1" src="assets/TT Images/mushroom.png">
-              <img id="mushroom2" src="assets/TT Images/mushroom.png">
-              <img id="mushroom3" src="assets/TT Images/mushroom.png">
-              <img id="mushroom4" src="assets/TT Images/mushroom.png">
+              <img id="gardenImg" class="d-block w-100" src="assets/TT Images/farm.png">
+              <div id ="newPlants">
+
+              </div>
+              <!-- <img draggable="true" ondragstart="drag_start(event)" id="mushroom1" src="assets/TT Images/mushroom.png"> -->
+
             </div>
         </div>
       </div>
+
+
+      <div class="row">
+        <div class="col-12">
+            <div class="modal fade" id="plantsModal" tabindex="-1" role="dialog" aria-labelledby="optionsModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Please add your plants</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                             </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                              <div class="form-group">
+                                <label for="Day Chooser">Choose your plants</label>
+                                <select class="form-control" id="plantSelector">
+                                    <option value="rosemary">Rosemary</option>
+                                    <option value="cilantro">Cilantro</option>
+                                    <option value="basil">Basil</option>
+                                    <option value="parsley">Parsley</option>
+                                    <option value="pepper">Pepper</option>
+                                    <option value="tomato">Tomato</option>
+                                    <option value="mushroom">Mushroom</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="start">Date Planted:</label>
+                                <input type="date" id="plantDate" name="date-planted" value="2020-05-22">
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                      <p id="plant-added">&nbsp;Your plant has been added!</p>
+                        <!-- <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal" id="closeBtn">Close</button> -->
+                        <button type="button" class="btn btn-success btn-save" id="savePlantBtn">Add Plant</button>
+                    </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+
 
       <!--Chef image - click to change placemats (background images)-->
       <div class="col-md-3">
@@ -328,7 +394,7 @@
   </div>
 
       <!-- Script section -->
-      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
@@ -337,6 +403,8 @@
       <script src="assets/js/TTscript.js"></script>
       <script src="assets/js/index.js"></script>
       <script src="assets/js/nextMeal.js"></script>
+      <script src="assets/js/garden.js"></script> -->
+
       
 </body>
 </html>

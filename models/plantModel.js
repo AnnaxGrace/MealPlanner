@@ -17,7 +17,7 @@ module.exports = (sequelize, DataTypes)=> {
 
 Plant.associate = function(models) {
 
-    Plant.belongsTo(models.User, {
+    Plant.belongsTo(models.Team, {
       foreignKey: {
         allowNull: true
     }

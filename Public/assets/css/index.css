@@ -114,14 +114,31 @@ h2:hover {
 }
 
 
+
 #gardendiv{
-    height: 492px;
-    width: 650px;
+    height: 768px;
+    width: 1024px;
     position: fixed;
     z-index: 3;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#maturity-div {
+    position: fixed;
+    z-index: 4;
+    top: 20%;
+    left: 1%;
+}
+
+.plants {
+    transform: translateY(-50%);
+    animation-name: skew;
+    animation-timing-function: ease;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
 }
 
 #mushroom3 {
@@ -255,5 +272,21 @@ input {
 
 h3.mealText{
     font-family: 'Caveat', cursive;
+}
+
+#days-mature {
+    font-size: 25px;
+}
+
+#plant-added {
+    color: white;
+}
+
+@keyframes skew {
+    /* 0% {transform: skewX(0deg) } */
+    25% {transform: skewX(10deg) translateY(-50%) }
+    /* 50% {transform: skewX(0deg) } */
+    75% {transform: skewX(-10deg) translateY(-50%) }
+    /* 100% {transform: skewX(0deg) } */
 }
 

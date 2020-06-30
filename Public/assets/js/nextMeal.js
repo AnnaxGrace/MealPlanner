@@ -78,7 +78,6 @@ $(document).ready(() => {
     //Hands our rending to the page using selected meal
     const renderMeal = data => {
 
-        console.log(data)
         //calls our api to get our image path to grab from our amazon S3
         $.get("/api/chef/image/" + thisId + "/" + data[0].mealChef).then( response => {
             

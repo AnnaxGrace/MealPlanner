@@ -8,10 +8,10 @@ module.exports = function(app) {
     //         res.json(chefGetResults)
     //     })
     // })
-    app.post("/api/garden/new/:uid", (req,res)=>{
+    app.post("/api/garden/new", (req,res)=>{
         console.log(req.body)
-        db.Plant.create(req.body).then(data=>console.log(data))
-})
+        db.Plant.create(req.body).then(data=>res.json(data))
+    })  
 
     app.get("/api/garden/:uid", (req,res)=>{
         
@@ -22,9 +22,16 @@ module.exports = function(app) {
         db.Plant.findAll().then(data=> res.json(data))
     })
 
+    app.get("/api/all/team/:id", (req, res) => {
+        db.Plant.findAll({
+            where: {
+                TeamId: req.params.id
+            }
+        }).then( data => res.json(data))
+    })
+
     
     app.put("/api/garden/location/:id", function(req, res) {
-        console.log(req.body, req.params.id)
         db.Plant.update({
             positionLeft: req.body.left,
             positionTop: req.body.top
