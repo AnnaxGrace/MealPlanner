@@ -46,7 +46,7 @@ No contributors allowed.
 
 Click to Watch!
 
-<a href = "https://youtu.be/AOKByMfb4K0/" target= "_blank">
+<a href = "https://youtu.be/EL-TKikd8Dk/" target= "_blank">
 <img alt="Image of Homepage" style ="height: 300px;" src = "Public/assets/TT Images/PancakesHomepage.PNG"> 
 </a>
 
