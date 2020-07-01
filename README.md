@@ -150,5 +150,6 @@ Click to Watch!
 * Email: aprykotenko@gmail.com
 * GitHub Profile URL: https://github.com/prikat
 
+## Special thanks to Bryan Swarthout and Wilson Lam for their support and knowledge!
 
 
