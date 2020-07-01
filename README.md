@@ -134,7 +134,7 @@ Click to Watch!
      style="margin-right: 10px; height: 200px;" />
 
 * Github username: jcmastropieri
-* Email: 
+* Email: jcmastro5@gmail.com
 * GitHub Profile URL: https://github.com/jcmastropieri
 
 
@@ -147,7 +147,7 @@ Click to Watch!
      style=" margin-right: 10px; height: 200px;" />
 
 * Github username: prikat
-* Email: 
+* Email: aprykotenko@gmail.com
 * GitHub Profile URL: https://github.com/prikat
 
 
